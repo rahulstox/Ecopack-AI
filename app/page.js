@@ -291,7 +291,7 @@ export default function LandingPage() {
               </div>
               <span className="font-semibold text-gray-900">EcoPack AI</span>
             </div>
-            <p className="text-gray-600 text-center md:text-right">Built for Walmart Sparkathon 2025 • © EcoPack AI</p>
+            <p className="text-gray-600 text-center md:text-right">Copyright 2025 • © EcoPack AI</p>
           </div>
         </div>
       </footer>
