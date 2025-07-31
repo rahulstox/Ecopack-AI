@@ -6,6 +6,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata = {
   title: "EcoPack AI - Sustainable Packaging Recommendations",
   description: "Instant, eco-smart packaging picks for every SKU",
+    generator: 'v0.dev'
 }
 
 export default function RootLayout({ children }) {
