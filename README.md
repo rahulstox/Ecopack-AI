@@ -85,7 +85,6 @@ EcoPack AI is an AI-powered web application that provides instant, eco-friendly 
 - *Radix UI* (accessible UI primitives)
 - *Custom Hooks & Components* (for toasts, dialogs, forms, etc.)
 - *Vercel* (deployment)
-- *v0.dev* (UI prototyping)
 
 ---
 
