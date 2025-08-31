@@ -1,18 +1,20 @@
-import { Inter } from "next/font/google"
-import "./globals.css"
-
-const inter = Inter({ subsets: ["latin"] })
+// File: app/layout.js
+import { GeistSans } from 'geist/font/sans'
+import './globals.css'
+import Providers from '@/components/Providers' // Import the new provider
 
 export const metadata = {
-  title: "EcoPack AI - Sustainable Packaging Recommendations",
-  description: "Instant, eco-smart packaging picks for every SKU",
-    generator: 'v0.dev'
+  title: 'Ecopack AI - Sustainable Packaging Recommendations',
+  description: 'Instant, eco-smart packaging picks for every SKU',
 }
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} bg-gray-50`}>{children}</body>
+    <html lang='en' className={GeistSans.className}>
+      <body>
+        <Providers>{children}</Providers>{' '}
+        {/* Wrap your children with the provider */}
+      </body>
     </html>
   )
 }

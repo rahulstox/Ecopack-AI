@@ -3,13 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "next build",
     "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
     "lint": "next lint",
-    "start": "next start"
+    "format": "prettier --write \"**/*.{js,ts,jsx,tsx,md,json}\" --ignore-path .gitignore"
   },
   "dependencies": {
+    "@auth/prisma-adapter": "^2.10.0",
     "@hookform/resolvers": "^3.9.1",
+    "@prisma/client": "^6.15.0",
     "@radix-ui/react-accordion": "latest",
     "@radix-ui/react-alert-dialog": "latest",
     "@radix-ui/react-aspect-ratio": "latest",
@@ -47,7 +50,8 @@
     "input-otp": "latest",
     "jspdf": "latest",
     "lucide-react": "^0.454.0",
-    "next": "14.2.16",
+    "next": "^14.2.32",
+    "next-auth": "^4.24.7",
     "next-themes": "latest",
     "react": "^18",
     "react-day-picker": "latest",
@@ -66,6 +70,9 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "postcss": "^8.5",
+    "prettier": "^3.6.2",
+    "prettier-plugin-tailwindcss": "^0.6.14",
+    "prisma": "^6.15.0",
     "tailwindcss": "^3.4.17",
     "typescript": "^5"
   }
