@@ -29,6 +29,7 @@ export const authOptions = {
         token.email = user.email
         token.image = user.image
         token.username = user.username 
+        token.region = user.region
       }
       return token
     },
@@ -41,6 +42,7 @@ export const authOptions = {
         session.user.email = token.email
         session.user.image = token.image
         session.user.username = token.username
+        session.user.region = token.region
       }
       return session
     },

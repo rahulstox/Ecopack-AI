@@ -5,7 +5,8 @@ import { authOptions } from '@/app/api/auth/[...nextauth]/route'
 import prisma from '@/lib/prisma'
 import { LogActionDialog } from '@/components/LogActionDialog'
 import ActionLog from '@/components/ActionLog'
-import { redirect } from 'next/navigation' // Make sure redirect is imported
+import { redirect } from 'next/navigation' 
+import { FootprintChart } from '@/components/FootprintChart'
 
 async function getLogs(userId) {
   if (!userId) return []
@@ -48,6 +49,13 @@ export default async function DashboardPage() {
         </div>
       </div>
 
+      <FootprintChart data={logs} />
+      <div className='my-8 border-t' />
+      <h2 className='text-2xl font-bold mb-4'>Action Log</h2>
+      <p className='text-gray-60
+0 mb-4'>
+        Here is a detailed log of your daily actions and their carbon footprints.
+      </p>
       <ActionLog logs={logs} />
     </div>
   )

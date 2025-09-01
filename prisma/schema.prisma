@@ -36,11 +36,12 @@ model Session {
 
 model User {
   id             String          @id @default(cuid())
-  name           String?         // This is the name from Google
-  username       String?         @unique // Add this line for the custom username
+  name           String?
+  username       String?         @unique
   email          String?         @unique
   emailVerified  DateTime?
   image          String?
+  region         String?         // Add this line
   accounts       Account[]
   sessions       Session[]
   dailyLogs      DailyLog[]
