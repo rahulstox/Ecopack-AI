@@ -21,6 +21,11 @@ yarn-error.log*
 .env.test
 .env.production
 .env*.local
+.venv/
+
+# Python
+__pycache__/
+*.pyc
 
 # vercel
 .vercel
@@ -31,3 +36,7 @@ next-env.d.ts
 
 # prisma client (generated code)
 lib/generated/prisma/
+
+# IDE / OS
+.vscode/
+.DS_Store
